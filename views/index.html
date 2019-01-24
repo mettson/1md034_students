@@ -1,9 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>DELI-VERY</title>
+        <title>Amazing Burgers</title>
+        <meta charset="utf-8"/>
     </head>
     <body>
-        <h1>Hello World!!!</h1>
+      <main>
+        <h1>Welcome to Amazing Burgers</h1>
+      <section>
+        <h3>Please choose a burger from below:</h3>
+        <p>These are the burgers you can choose from today</p>
+        <table>
+          <thead align="center">
+            <tr>
+              <th>The Cheese n' Bacon Dream</th>
+              <th>THE Crispy Chicken</th>
+              <th>Sticky Honey Aubergine n' Halloumi Burger</th>
+            </tr>
+          </thead>
+          <tbody align="left">
+            <tr>
+                <td><img src="https://www.mathiaszachau.com/wp-content/uploads/2016/05/saftiga-hamburgare-e1463035643226.jpg" alt="Span" title="Cheese n bacon dream" width="300"></td>
+                <td><img src="https://static1.squarespace.com/static/596e7cdfa5790aab89b70f49/5977680f725e25b1cccdf632/5ad182448a922d44a43955a6/1524025316943/DSC_0639.jpg?format=2500w" alt="Span" title="THE Crispy Chicken" width="300"></td>
+                <td><img src="https://www.hellomagazine.com/imagenes/cuisine/2017051839042/sticky-honey-aubergine-halloumi-burger-recipe/0-207-390/Vegetable-Burger-t.jpg" alt="Span" title="Sticky Honey Aubergine n Halloumi Burger" width="300"></td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>78 kr</li>
+                  <li>Our popular beef burger with the perfect cooked bacon and A LOT of cheese</li>
+                </ul>
+                <dl>
+                  <dt>Contains:</dt>
+                  <dd>Lactose, gluten, beef, tomato and onion
+                </dl>
+              </td>
+              <td>
+                <ul>
+                  <li>74 kr</li>
+                  <li>The crispiest burger you will ever taste with a fresh apple and mint dressing</li>
+                </ul>
+                <dl>
+                  <dt>Contains:</dt>
+                  <dd>Lactose, gluten, chicken, garlic and tomato
+                </dl>
+              </td>
+              <td>
+                <ul>
+                  <li>66 kr</li>
+                  <li>Our fresh veggie burger with honey glazed aubergine and halloumi</li>
+                </ul>
+                <dl>
+                  <dt>Contains:</dt>
+                  <dd>Lactose and gluten
+                </dl>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="contact">
+        <h3>Information about you:</h3>
+        <p>This is all the information we need about you</p>
+        <h4>Delivery Information:</h4>
+        <form>
+          <p>
+            <label for="fullname">Full name</label><br>
+            <input type="text" id="fullname" name="fn" required="required" placeholder="First- and Last name">
+          </p>
+          <p>
+            <label for="emailadress">E-Mail</label><br>
+            <input type="text" id="emailadress" name="em" required="required" placeholder="E-mail address">
+          </p>
+          <p>
+            <label for="street">Street</label><br>
+            <input type="text" id="street" name="st" required="required" placeholder="Street name">
+          </p>
+          <p>
+            <label for="house">House</label><br>
+            <input type="number" id="streetnumber" name="sn" required="required" placeholder="House number">
+          </p>
+        </form>
+        <p>
+          <label for="payment">Payment</label><br>
+          <select id="payment" name="pmt">
+              <option>Card</option>
+              <option>Swish</option>
+              <option>Cash</option>
+              <option>Klarna</option>
+          </select>
+        </p>
+        <form action="chooseyourgender">
+          <input type="radio" name="gender" value="female">
+          Female<br>
+          <input type="radio" name="gender" value="male">
+          Male<br>
+          <input type="radio" name="gender" value="Non-Binary">
+          Non-Binary<br>
+          <input type="radio" name="gender" value="Do not wish to provide">
+          Do not wish to provide<br>
+          <button type="submit"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRImZDxflW_09A7rj8HQrKgWcneZ-QpJo-RX79PB73-uhZCHtLUYg" width="12">Confirm Delivery</button>
+      </section>
+      </main>
+      <hr>
+      <footer>&copy; 2019 Amazing Burgers Inc</footer>
     </body>
 </html>
