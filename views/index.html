@@ -2,62 +2,58 @@
 <html lang="en">
     <head>
         <title>Amazing Burgers</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta charset="utf-8"/>
     </head>
     <body>
       <main>
-        <h1>Welcome to Amazing Burgers</h1>
-      <section>
-        <h3>Please choose a burger from below:</h3>
-        <p>These are the burgers you can choose from today</p>
-        <table>
-          <thead align="center">
-            <tr>
-              <th>The Cheese n' Bacon Dream</th>
-              <th>THE Crispy Chicken</th>
-              <th>Sticky Honey Aubergine n' Halloumi Burger</th>
-            </tr>
-          </thead>
-          <tbody align="left">
-            <tr>
-                <td><img src="https://www.mathiaszachau.com/wp-content/uploads/2016/05/saftiga-hamburgare-e1463035643226.jpg" alt="Span" title="Cheese n bacon dream" width="300"></td>
-                <td><img src="https://static1.squarespace.com/static/596e7cdfa5790aab89b70f49/5977680f725e25b1cccdf632/5ad182448a922d44a43955a6/1524025316943/DSC_0639.jpg?format=2500w" alt="Span" title="THE Crispy Chicken" width="300"></td>
-                <td><img src="https://www.hellomagazine.com/imagenes/cuisine/2017051839042/sticky-honey-aubergine-halloumi-burger-recipe/0-207-390/Vegetable-Burger-t.jpg" alt="Span" title="Sticky Honey Aubergine n Halloumi Burger" width="300"></td>
-            </tr>
-            <tr>
-              <td>
-                <ul>
-                  <li>78 kr</li>
-                  <li>Our popular beef burger with the perfect cooked bacon and A LOT of cheese</li>
-                </ul>
-                <dl>
-                  <dt>Contains:</dt>
-                  <dd>Lactose, gluten, beef, tomato and onion
-                </dl>
-              </td>
-              <td>
-                <ul>
-                  <li>74 kr</li>
-                  <li>The crispiest burger you will ever taste with a fresh apple and mint dressing</li>
-                </ul>
-                <dl>
-                  <dt>Contains:</dt>
-                  <dd>Lactose, gluten, chicken, garlic and tomato
-                </dl>
-              </td>
-              <td>
-                <ul>
-                  <li>66 kr</li>
-                  <li>Our fresh veggie burger with honey glazed aubergine and halloumi</li>
-                </ul>
-                <dl>
-                  <dt>Contains:</dt>
-                  <dd>Lactose and gluten
-                </dl>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <section id="headersection">
+          <div class="header">
+          <img src="https://www.chanhassendt.com/ArticleMedia/Images/Brindisi's%20Pub/BrindisisLights_exterior_web.jpg" title="Amazing Burgers">
+          <h1 align="center">Welcome to Amazing Burgers</h1>
+        </section>
+        <section id="burgers">
+          <h3>Please choose a burger from below:</h3>
+            <div class="wrapper">
+              <div class="boxa"><h4>The Cheese n' Bacon Dream</h4></div>
+              <div class="boxb"><h4>THE Crispy Chicken</h4></div>
+              <div class="boxc"><h4>Sticky Honey Aubergine n' Halloumi Burger</h4></div>
+              <div class="boxd"><img src="https://www.mathiaszachau.com/wp-content/uploads/2016/05/saftiga-hamburgare-e1463035643226.jpg" alt="Span" title="Cheese n bacon dream" width="350"></div>
+              <div class="boxe"><img src="https://static1.squarespace.com/static/596e7cdfa5790aab89b70f49/5977680f725e25b1cccdf632/5ad182448a922d44a43955a6/1524025316943/DSC_0639.jpg?format=2500w" alt="Span" title="THE Crispy Chicken" width="350"></div>
+              <div class="boxf"><img src="https://www.hellomagazine.com/imagenes/cuisine/2017051839042/sticky-honey-aubergine-halloumi-burger-recipe/0-207-390/Vegetable-Burger-t.jpg" alt="Span" title="Sticky Honey Aubergine n Halloumi Burger" width="390"></div>
+              <div class="boxg"><ul>
+                <li>78 kr</li>
+                <li>Our popular beef burger with the perfect cooked bacon and A LOT of cheese</li>
+              </ul>
+              <dl>
+                <dt>Contains:</dt>
+                <dd> Angus beef, <span class="allergies">lactose</span>, <span class="allergies">gluten</span>, tomato and onion
+              </dl></div>
+              <div class="boxh"><ul>
+                <li>74 kr</li>
+                <li>The crispiest burger you will ever taste with a fresh apple and mint dressing</li>
+              </ul>
+              <dl>
+                <dt>Contains:</dt>
+                <dd><span class="allergies">Lactose</span>, chicken,<span class="allergies"> gluten</span>, garlic and tomato
+              </dl></div>
+              <div class="boxi"><ul>
+                <li>66 kr</li>
+                <li>Our fresh veggie burger with honey glazed aubergine and halloumi</li>
+              </ul>
+              <dl>
+                <dt>Contains:</dt>
+                <dd><span class="allergies">Lactose</span> and <span class="allergies">gluten</span>
+              </dl></div>
+            </div>
+        <p align="center">
+          <label for="choose">Select your favorite burger:</label>
+          <select id="choose" name="chs">
+              <option>The Cheese n' Bacon Dream</option>
+              <option>THE Chrispy Chicken</option>
+              <option>Sticky Honey Aubergine n' Halloumi Burger</option>
+          </select>
+        </p>
       </section>
       <section id="contact">
         <h3>Information about you:</h3>
@@ -99,8 +95,11 @@
           Non-Binary<br>
           <input type="radio" name="gender" value="Do not wish to provide">
           Do not wish to provide<br>
-          <button type="submit"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRImZDxflW_09A7rj8HQrKgWcneZ-QpJo-RX79PB73-uhZCHtLUYg" width="12">Confirm Delivery</button>
-      </section>
+          </section>
+          <section id="done">
+          <button type="submit"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRImZDxflW_09A7rj8HQrKgWcneZ-QpJo-RX79PB73-uhZCHtLUYg" width="20">Confirm Delivery</button>
+          <br></br>
+        </section>
       </main>
       <hr>
       <footer>&copy; 2019 Amazing Burgers Inc</footer>
