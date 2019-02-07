@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <title>Amazing Burgers</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta charset="utf-8"/>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script src="js/js_script.js" defer></script>
+        <script src="https://vuejs.org/js/vue.js"></script>
+        <script src="js/vue_script.js" defer></script>
     </head>
     <body>
       <main>
@@ -12,8 +17,23 @@
           <img src="https://www.chanhassendt.com/ArticleMedia/Images/Brindisi's%20Pub/BrindisisLights_exterior_web.jpg" title="Amazing Burgers">
           <h1 align="center">Welcome to Amazing Burgers</h1>
         </section>
+      <section id="burgers"><h2>Please choose your favorite burger: </h2>
+        <div class="wrapper" id="jsburgers"></div>
+      </section>
         <section id="burgers">
-          <h3>Please choose a burger from below:</h3>
+          <div v-bind:title="arbitraryVariableName" id="chooseBurger">
+            <h1>{{ arbitraryVariableName }}</h1>
+            <div class="wrapper">
+              <div v-for='burger in burgers'>
+                <h4><input type="checkbox" :name=burger.name class="checkbox" id="MenuItem.name"></input>{{ burger.name }}</h4>
+                <img id="img" :src="burger.img" >
+                <li>{{burger.kCal}}</li>
+                <li>{{burger.description}}</li>
+                <li>{{burger.contains}}</li>
+              </div>
+            </div>
+            </div>
+          <!--<h3>Please choose a burger from below:</h3>
             <div class="wrapper">
               <div class="boxa"><h4>The Cheese n' Bacon Dream</h4></div>
               <div class="boxb"><h4>THE Crispy Chicken</h4></div>
@@ -45,16 +65,20 @@
                 <dt>Contains:</dt>
                 <dd><span class="allergies">Lactose</span> and <span class="allergies">gluten</span>
               </dl></div>
-            </div>
-        <p align="center">
+            </div>-->
+      <!--  <p align="center">
           <label for="choose">Select your favorite burger:</label>
           <select id="choose" name="chs">
               <option>The Cheese n' Bacon Dream</option>
               <option>THE Chrispy Chicken</option>
               <option>Sticky Honey Aubergine n' Halloumi Burger</option>
+              <option>The Allergy Friendly Burger</option>
+              <option>Fishyfishy Burger</option>
+              <option>The Ultimate Kids Burger</option>
           </select>
-        </p>
+        </p>--->
       </section>
+      <form>
       <section id="contact">
         <h3>Information about you:</h3>
         <p>This is all the information we need about you</p>
@@ -86,10 +110,9 @@
               <option>Klarna</option>
           </select>
         </p>
-        <form action="chooseyourgender">
-          <input type="radio" name="gender" value="female">
+          <input type="radio" name="gender" value="Female">
           Female<br>
-          <input type="radio" name="gender" value="male">
+          <input type="radio" name="gender" value="Male">
           Male<br>
           <input type="radio" name="gender" value="Non-Binary">
           Non-Binary<br>
@@ -97,8 +120,10 @@
           Do not wish to provide<br>
           </section>
           <section id="done">
-          <button type="submit"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRImZDxflW_09A7rj8HQrKgWcneZ-QpJo-RX79PB73-uhZCHtLUYg" width="20">Confirm Delivery</button>
+          <button v-on:click="markDone()" type="submit" id="myButtonID"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRImZDxflW_09A7rj8HQrKgWcneZ-QpJo-RX79PB73-uhZCHtLUYg" width="20">Confirm Delivery</button>
+          <!--<button type="submit" id="myButtonID"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRImZDxflW_09A7rj8HQrKgWcneZ-QpJo-RX79PB73-uhZCHtLUYg" width="20">Confirm Delivery</button>-->
           <br></br>
+          <div id="infoSection"></div>
         </section>
       </main>
       <hr>

@@ -7,6 +7,16 @@ body {
   font-weight: bold;
 }
 
+#img {
+  width: 400px;
+  height: 250px;
+}
+
+.BurgerPic {
+  width: 400px;
+  height: 250px;
+}
+
 #headersection {
   margin-left: 65px;
   margin-right: 65px;
@@ -32,8 +42,11 @@ body {
   margin-left: 65px;
   margin-right: 65px;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 30px;
   border: 2px dashed;
+}
+
+#jsburgers {
 
 }
 
@@ -65,7 +78,7 @@ table {
 
 .wrapper {
      display: grid;
-     grid-gap: 10px;
+     grid-gap: 15px;
      grid-template-columns: 400px 400px 400px;
      color: black;
  }
@@ -107,6 +120,12 @@ table {
   grid-row: 2;
 }
 
+@media only screen and (max-width: 100px) {
+  .wrapper{
+    display: inline;
+  }
+}
+/*
 .g {
   grid-column: 1;
   grid-row: 3;
@@ -121,3 +140,4 @@ table {
   grid-column: 3;
   grid-row: 3;
 }
+*/
